@@ -3,111 +3,230 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michael Onyemazu</title>
+  <meta name="description" content="Michael Onyemazu - Front-End Developer & Customer Success Specialist. Building clean interfaces with 3+ years of remote customer support experience.">
+  <meta name="keywords" content="Front-End Developer, Web Developer, HTML, CSS, JavaScript, Nigeria">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Michael Onyemazu - Front-End Developer">
+  <meta property="og:description" content="Self-taught front-end developer with 3+ years in remote customer support. Building clean interfaces with empathy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://michaelonyemazu.com">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Michael Onyemazu - Front-End Developer">
+  <meta name="twitter:description" content="Self-taught front-end developer building calm, empathetic web solutions.">
+  
+  <title>Michael Onyemazu - Front-End Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230f172a'>M</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Dark mode toggle -->
   <button id="theme-toggle" aria-label="Switch theme">🌙</button>
 
-  <header class="glass">
-    <div class="container nav-bar">
-      <div class="logo">Michael Onyemazu</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- Hamburger Menu -->
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-bar">
+        <div class="logo"><b><strong>Michael Ⓜ.</strong></b></div>
+        <nav id="nav-menu" class="nav-menu">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Hero -->
-    <section class="hero">
-      <h1>
-        <span class="static-text">I'm a </span>
-        <span class="typewriter" id="typewriter"></span>
-      </h1>
-      <p class="subtitle">Self‑taught front‑end developer with 3+ years in remote customer support. I build clean interfaces and deliver calm, empathetic solutions.</p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="https://github.com/MichaelRayDev" target="_blank" class="btn btn-outline">GitHub</a>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <h2 class="section-title reveal">About Me</h2>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>I'm Michael Onyemazu, a 21‑year‑old creative from Lagos, Nigeria. I started my journey teaching myself HTML, CSS, and JavaScript out of pure curiosity—turning late‑night YouTube tutorials into real, responsive websites. That same hunger for learning led me to design tools like Canva and CorelDRAW, and even dabbling in Figma.</p>
-          <p>But technology is only half of my story. My 3+ years in face‑to‑face and remote customer service taught me how to listen, de‑escalate, and communicate with empathy. I've been promoted within ten months for knowing my product inside out and treating every user interaction as a chance to build trust.</p>
-          <p>Today I combine both worlds: writing clean code while keeping the human experience at the center. I'm looking for a remote front‑end role where I can grow, contribute, and continue learning.</p>
-        </div>
-        <div class="skills-box glass reveal">
-          <h3>🛠 Tech Stack</h3>
-          <div class="tags">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span>
-            <span>Git & GitHub</span><span>VS Code</span><span>Responsive Design</span>
-            <span>Canva</span><span>CorelDRAW</span><span>Figma (basics)</span>
-            <span>Tailwind CSS (learning)</span><span>React (soon)</span>
-          </div>
-          <h3 style="margin-top:2rem;">🤝 Soft Skills</h3>
-          <div class="tags">
-            <span>Communication</span><span>Active Listening</span><span>Conflict Resolution</span>
-            <span>CRM & Ticket Management</span><span>Public Speaking</span>
-            <span>Remote Collaboration</span><span>Empathy</span>
-            <span>Quick Learner</span>
-          </div>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="static-text">I'm a </span>
+          <span class="typewriter" id="typewriter"></span>
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle">Self‑taught front‑end developer with 3+ years in remote and in-person customer support. I build clean, empathetic interfaces that people love.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Let's Talk</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2 class="section-title reveal">Projects</h2>
-      <div class="project-grid">
-        <div class="project-card glass reveal">
-          <div class="project-icon">🛒</div>
-          <h3>ShopNova Store</h3>
-          <p>Multi‑product e‑commerce page with image gallery, size/color selectors, cart state management, and fully responsive layout.</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3>My Journey</h3>
+          <p>I'm Michael Onyemazu, a 21‑year‑old creative based in Lagos, Nigeria. Self‑taught in web development, I transformed my curiosity into skills—turning late‑night YouTube tutorials into real, responsive websites built with HTML, CSS, and JavaScript. I'm passionate about creating interfaces that are not just functional, but intuitive and delightful.</p>
+          
+          <p>Beyond code, I bring 3+ years of hands‑on experience in customer service and 1 year of marketing experience. I've learned how to listen deeply, understand user needs, and communicate solutions with empathy and clarity. This unique blend of technical skills and human-centered thinking is what drives my work—I build with both logic and heart.</p>
+          
+          <p>Today, I focus on crafting digital experiences that solve real problems. My approach combines clean code practices, design thinking, and a genuine commitment to understanding the people who use what I build. I'm driven by curiosity, attention to detail, and a desire to create meaningful impact through thoughtful design.</p>
+        </div>
+
+        <div class="about-skills">
+          <div class="skill-category">
+            <h3>🛠 Tech Stack</h3>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript (ES6+)</span>
+              <span>Responsive Design</span>
+              <span>Git & GitHub</span>
+              <span>VS Code</span>
+              <span>Microsoft Office</span>
+              <span>Canva</span>
+              <span>CorelDRAW</span>
+              <span>Figma</span>
+              <span>Tailwind CSS</span>
+              <span>React (learning)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>🤝 Core Strengths</h3>
+            <div class="skill-tags">
+              <span>Communication</span>
+              <span>Problem Solving</span>
+              <span>Empathy</span>
+              <span>Active Listening</span>
+              <span>Conflict Resolution</span>
+              <span>Customer Service Excellence</span>
+              <span>Marketing Strategy</span>
+              <span>Remote Collaboration</span>
+              <span>Public Speaking</span>
+              <span>Attention to Detail</span>
+              <span>Adaptability</span>
+              <span>Quick Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🛒</div>
+            <h3>ShopNova Store</h3>
+          </div>
+          <p class="project-description">A fully functional e‑commerce product page demo with image gallery, color/size selectors, cart state management, and responsive design.</p>
+          <div class="project-meta">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
           <div class="project-links">
-            <a href="https://ShopNova-stores.netlify.app" target="_blank" class="btn btn-primary">Live Demo</a>
-            <a href="https://github.com/MichaelRayDev/ecommerce-product-page" target="_blank" class="btn btn-outline">GitHub</a>
+            <a href="https://ShopNova-stores.netlify.app" target="_blank" rel="noopener" class="btn btn-small">Live Demo</a>
+            <a href="https://github.com/MichaelRayDev/ecommerce-product-page" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
-        <div class="project-card glass reveal">
-          <div class="project-icon">☀️</div>
-          <h3>Weatherly Dashboard</h3>
-          <p>Real‑time weather app with dynamic backgrounds, 5‑day forecast, recent searches, and error handling.</p>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">☀️</div>
+            <h3>Weatherly Dashboard</h3>
+          </div>
+          <p class="project-description">Real‑time weather application with dynamic backgrounds, 5‑day forecast, search history, error handling, and a clean UI.</p>
+          <div class="project-meta">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
           <div class="project-links">
-            <a href="https://weatherly01.netlify.app" target="_blank" class="btn btn-primary">Live Demo</a>
-            <a href="https://github.com/MichaelRayDev/weather-dashboard" target="_blank" class="btn btn-outline">GitHub</a>
+            <a href="https://weatherly01.netlify.app" target="_blank" rel="noopener" class="btn btn-small">Live Demo</a>
+            <a href="https://github.com/MichaelRayDev/weather-dashboard" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Form -->
-    <section id="contact">
-      <h2 class="section-title reveal">Get In Touch</h2>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" class="contact-form glass reveal">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's create something amazing together.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
         <input type="hidden" name="form-name" value="contact">
         <p hidden><input name="bot-field"></p>
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity" required></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Peter Odi" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-loader hidden">⏳</span>
+        </button>
         <div id="form-feedback" class="form-feedback"></div>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="glass">
-    <p>© 2026 Michael Onyemazu ·
-      <a href="https://github.com/MichaelRayDev">GitHub</a> ·
-      <a href="https://linkedin.com/in/michael-c-onyemazu">LinkedIn</a> ·
-      <a href="mailto:michaelonyemazu@gmail.com">Email</a>
-    </p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Michael O.</h4>
+          <p>Front-End Developer, CSR professional, Marketer & Creative Problem Solver</p>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/MichaelRayDev" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/michael-c-onyemazu" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:michaelonyemazu@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Michael Onyemazu. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
